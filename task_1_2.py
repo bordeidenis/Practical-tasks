@@ -29,7 +29,6 @@ def work_with_regex():
         if key not in second_to_last_eid_dict or last_eid_dict[key] != second_to_last_eid_dict[key]:
             differences[key] = (second_to_last_eid_dict.get(key), last_eid_dict.get(key))
 
-    # Вывод результатов в консоль
     print("Предпоследние eid: ", second_to_last_eid)
     print("Последние eid: ", last_eid)
     print("Отличия: ", differences)
